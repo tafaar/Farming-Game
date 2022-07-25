@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84a41708eed3834eb787a66cd3e0f4d, type: 3}
+  m_Name: Item_Crop_Suspicious_Seed
+  m_EditorClassIdentifier: Assembly-CSharp::Crop
+  name: Suspicious Seed
+  type: 0
+  icon: {fileID: 21300000, guid: 999ae2fbf109e1740953679149b60d4a, type: 3}
+  overworldSprite: {fileID: -599636013, guid: a9b6c91110b18584bae29dd30391e356, type: 3}
+  description: A strange seed. Some say it was deposited on this planet bya meteor...
+    Others say aliens.
+  maxStack: 4
+  currentStack: 1
+  edible: 0
+  health: 0
+  energy: 0
+  placeable: 0
+  canBeDropped: 1
+  canBeSold: 1
+  basePrice: 0
+  sortOffset: 0
+  daysToGrow: 4
+  currentDays: 0
+  growthSprites:
+  - {fileID: -599636013, guid: a9b6c91110b18584bae29dd30391e356, type: 3}
+  - {fileID: 261283370, guid: a9b6c91110b18584bae29dd30391e356, type: 3}
+  - {fileID: 737812165, guid: a9b6c91110b18584bae29dd30391e356, type: 3}
+  - {fileID: 1879625548, guid: a9b6c91110b18584bae29dd30391e356, type: 3}
+  growthDays: 01000000020000000300000004000000
+  harvestedCrop: {fileID: 11400000, guid: 1cc28828a378234459fecc6a0c26e7b4, type: 2}

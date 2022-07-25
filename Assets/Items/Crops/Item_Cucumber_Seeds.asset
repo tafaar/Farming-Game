@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84a41708eed3834eb787a66cd3e0f4d, type: 3}
+  m_Name: Item_Cucumber_Seeds
+  m_EditorClassIdentifier: 
+  name: Cucumber Seeds
+  type: 0
+  icon: {fileID: -153803476, guid: 06f562b6d929c7242841532a8e4925c9, type: 3}
+  overworldSprite: {fileID: -153803476, guid: 06f562b6d929c7242841532a8e4925c9, type: 3}
+  description: Plant on wet, tilled soil. Don't forget to water!
+  maxStack: 999
+  currentStack: 1
+  edible: 0
+  health: 0
+  energy: 0
+  placeable: 0
+  canBeDropped: 1
+  canBeSold: 1
+  basePrice: 0
+  sortOffset: 0.5
+  daysToGrow: 6
+  currentDays: 0
+  growthSprites:
+  - {fileID: 949536907, guid: 06f562b6d929c7242841532a8e4925c9, type: 3}
+  - {fileID: -1761932662, guid: 06f562b6d929c7242841532a8e4925c9, type: 3}
+  - {fileID: 587515880, guid: 06f562b6d929c7242841532a8e4925c9, type: 3}
+  - {fileID: -808264118, guid: 06f562b6d929c7242841532a8e4925c9, type: 3}
+  - {fileID: -301243328, guid: 06f562b6d929c7242841532a8e4925c9, type: 3}
+  growthDays: 0100000002000000040000000500000006000000
+  harvestedCrop: {fileID: 11400000, guid: 5a5dd2816bd80074eb7ce857b47cd817, type: 2}

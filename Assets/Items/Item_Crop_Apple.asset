@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84a41708eed3834eb787a66cd3e0f4d, type: 3}
+  m_Name: Item_Crop_Apple
+  m_EditorClassIdentifier: Assembly-CSharp::Crop
+  name: Apple
+  type: 0
+  icon: {fileID: 21300000, guid: 2d57297638b50724dbe5f4c0713e4c3d, type: 3}
+  overworldSprite: {fileID: 21300000, guid: 28dfd40787083b148b7b697596f0777c, type: 3}
+  description: 'A juicy apple. Apples come in many varieties: crisp, soft, sweet,
+    tart; there''s always an apple for everyone.'
+  maxStack: 6
+  currentStack: 1
+  edible: 1
+  health: 0
+  energy: 0
+  placeable: 0
+  canBeDropped: 1
+  canBeSold: 1
+  basePrice: 0
+  sortOffset: 0
+  daysToGrow: 31
+  currentDays: 0
+  growthSprites: []
+  growthDays: 
+  harvestedCrop: {fileID: 0}
