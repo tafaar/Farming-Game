@@ -41,7 +41,7 @@ public class Tree : MonoBehaviour
             string matName = spriteRenderer.sprite.name[..truncIndex] + "_LeafMat";
 
             leavesSr.material = TimeManager.instance.leafMaterials.ToList().Find(mat => mat.name.Equals(matName));
-
+            leaves.transform.GetChild(0).GetComponent<ParticleSystemRenderer>().material = leavesSr.material;
 
         }
     }

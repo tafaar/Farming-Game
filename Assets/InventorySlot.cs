@@ -66,18 +66,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IPointerEnterH
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
-        int clickType = 0;
 
-        if (pointerEventData.button == PointerEventData.InputButton.Left) clickType = 0;
-        if (pointerEventData.button == PointerEventData.InputButton.Right) clickType = 1;
-        if (pointerEventData.button == PointerEventData.InputButton.Middle) clickType = 2;
-
-
-        selector.selectedSlot = slotID;
-
-        print(clickType.ToString());
-
-        if (selector.type == ItemBarSelector.Type.INVENTORY) selector.ClickItem(slotID, clickType);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -85,8 +74,9 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IPointerEnterH
         if(selector.type == ItemBarSelector.Type.INVENTORY)
         {
             if (item != null) selector.highlightedItem = item;
+            selector.selectedSlot = slotID;
 
-            if (item != null) selector.mousingOver = true;
+            selector.mousingOver = true;
         }
     }
 

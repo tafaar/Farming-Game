@@ -14,4 +14,8 @@ public class Crop : Item
     public int[] growthDays;
 
     public Item harvestedCrop;
+
+    public bool regrows;
+    public int regrowDay;
+    public Sprite regrowSprite;
 }

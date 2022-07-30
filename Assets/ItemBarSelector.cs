@@ -82,13 +82,11 @@ public class ItemBarSelector : MonoBehaviour
         {
             if (player.controls.Player.Interact.triggered)
             {
-                mouseHolding = false;
                 ClickItem(selectedSlot, 0);
             }
 
             if (player.controls.Player.Alternate.triggered)
             {
-                mouseHolding = false;
                 ClickItem(selectedSlot, 1);
             }
 
@@ -117,8 +115,7 @@ public class ItemBarSelector : MonoBehaviour
                 }
                 else heldItem.sprite = null;
 
-                if(mouseHolding) heldItem.transform.position = Input.mousePosition;
-                if (!mouseHolding) heldItem.transform.position = transform.position;
+                heldItem.transform.position = Input.mousePosition;
             }
             else heldItem.gameObject.SetActive(false);
         }
@@ -232,7 +229,7 @@ public class ItemBarSelector : MonoBehaviour
         };
 
         if (initialInput) { initialInput = false; yield return new WaitForSecondsRealtime(0.14f); }
-        yield return new WaitForSecondsRealtime(0.8f);
+        yield return new WaitForSecondsRealtime(0.08f);
 
         runningCr = false;
 

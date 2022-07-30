@@ -88,6 +88,8 @@ public class TimeManager : MonoBehaviour
             dirtMat.color = dirtColors[0];
 
             mapleLeaf.color = mapleColors[0];
+            oakLeaf.color = oakColors[0];
+            pineLeaf.color = pineColors[0];
 
         }
         else if(season == Season.SUMMER)
@@ -96,6 +98,9 @@ public class TimeManager : MonoBehaviour
             dirtMat.color = dirtColors[1];
 
             mapleLeaf.color = mapleColors[1];
+            oakLeaf.color = oakColors[1];
+            pineLeaf.color = pineColors[1];
+
 
         }
         else if(season == Season.FALL)
@@ -104,6 +109,9 @@ public class TimeManager : MonoBehaviour
             dirtMat.color = dirtColors[2];
 
             mapleLeaf.color = mapleColors[2];
+            oakLeaf.color = oakColors[2];
+            pineLeaf.color = pineColors[2];
+
 
         }
         else if (season == Season.WINTER)
@@ -112,6 +120,9 @@ public class TimeManager : MonoBehaviour
             dirtMat.color = dirtColors[3];
 
             mapleLeaf.color = mapleColors[3];
+            oakLeaf.color = oakColors[3];
+            pineLeaf.color = pineColors[3];
+
 
         }
 

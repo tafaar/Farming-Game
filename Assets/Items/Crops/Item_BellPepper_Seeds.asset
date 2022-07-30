@@ -39,3 +39,6 @@ MonoBehaviour:
   - {fileID: -1945143177, guid: 727724aaaba9bf74c8c0815ae3d885cf, type: 3}
   growthDays: 01000000020000000300000004000000050000000600000007000000
   harvestedCrop: {fileID: 11400000, guid: 6f8fc9e0c15545842bada7b55f3630df, type: 2}
+  regrows: 0
+  regrowDay: 0
+  regrowSprite: {fileID: 0}

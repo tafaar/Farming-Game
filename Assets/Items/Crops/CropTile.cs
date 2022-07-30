@@ -37,7 +37,7 @@ public class CropTile : MonoBehaviour
         {
             if (seedOffset == false)
             {
-                spriteRenderer.sortingOrder += -Mathf.RoundToInt(spriteRenderer.transform.position.y * 10);
+                spriteRenderer.sortingOrder = -Mathf.RoundToInt(spriteRenderer.transform.position.y * 10);
                 seedOffset = true;
             } 
             spriteRenderer.sprite = growthChange[crop.currentDays];
@@ -49,6 +49,19 @@ public class CropTile : MonoBehaviour
     {
         Vector3Int pos = new Vector3Int(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), 0);
 
-        if(player.AddItemToInventory(crop.harvestedCrop)) TileManager.instance.RemoveCrop(pos);
+        if (player.AddItemToInventory(crop.harvestedCrop)) {
+
+            if (crop.regrows == false)
+            {
+                TileManager.instance.RemoveCrop(pos);
+            }
+
+            if(crop.regrows == true)
+            {
+                crop.currentDays = crop.regrowDay;
+                spriteRenderer.sprite = crop.regrowSprite;
+                readyToHarvest = false;
+            }
+        }
     }
 }
